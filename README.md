@@ -1,0 +1,1 @@
+# app-templates-JBossEAP-on-AppService

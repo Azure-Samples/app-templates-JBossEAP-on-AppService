@@ -34,7 +34,7 @@ This is a quickstart template. It deploys the following:
   * Create the Microservices Pet Store - build with Maven
   * Create an Azure Container Registry
   * Push your app to the container registry
-  * Create an Azure App Services (AAS) Cluster
+  * Create an Azure App Services (AAS) Istance
   * Deploy each of the Microservies to AAS
   * Verify your container images
 
@@ -56,7 +56,7 @@ This is a quickstart template. It deploys the following:
 1.  Fork the repository by clicking the 'Fork' button on the top right of the page.
 This creates a local copy of the repository for you to work in. 
 
-2.  Configure GITHUB Actions:  Follow the insturctions in the [GITHUB_ACTIONS_CONFIG.md file](https://github.com/Azure-Samples/app-templates-springboot-app-on-ARO/blob/main/.github/GITHUB_ACTIONS_CONFIG.md) (Located in the .github folder.)
+2.  Configure GITHUB Actions:  Follow the insturctions in the [GITHUB_ACTIONS_CONFIG.md file](https://github.com/Azure-Samples/app-templates-JBossEAP-on-AppService/blob/main/.github/GITHUB_ACTIONS_CONFIG.md) (Located in the .github folder.)
 
 3.  Run the workflow 
    * If workflows are enabled for this repository it should run automatically. To enable the workflow run automatically, Go to Actions and enable the workflow if needed.

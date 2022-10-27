@@ -69,7 +69,7 @@ This creates a local copy of the repository for you to work in.
 
 # Pet Store Website
 
-<img width="1042" alt="petstore-screenshot" src="https://github.com/MikeTB-Microsoft/App_Template_JBoss_EAP_on_AppService/blob/main/src/jbossappser-construction/images/petstore02.png">
+<img width="1042" alt="petstore-screenshot" src="https://github.com/Azure-Samples/app-templates-JBossEAP-on-AppService/blob/main/src/jbossappser-construction/images/petstore02.png">
 
 
 # Pet Store Website - IP Address 
@@ -78,8 +78,10 @@ This creates a local copy of the repository for you to work in.
 
 - Log into the Azure Portal
 - Nagivate the the "petstore_spoke_eastus" Resource Group
-- Goto GitHub Actions and clink on your latest Deployment
-- Scroll down to the section titled "build_java_jbosseap_petstore_app"
-- Open the Section....you will see a table, that list the EXTERNAL-IP.
-- The EXTERNAL-IP will relfect the location of the Deployment.  
-- You can utilze the EXTERNAL-IP to view the deployed image. 
+- Locate the Wep App named: jbeapcoolstorewebapp (this is just a sample of what the Web App might be named)
+- Click it...
+- On the upper Right Hand Side, you will see a URL:  https://jbeapcoolstorewebapp.azurewebsites.net (this is just a sample URL)
+- Click it...
+- A new page will open....it may take like 20 to 30 seconds to load (the WAR file is unpacking)
+- Once open, you will see the Pet Store Applicaiton Landing Page....
+

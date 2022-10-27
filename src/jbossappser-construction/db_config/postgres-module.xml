@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<module xmlns="urn:jboss:module:1.1" name="org.postgres">
+    <resources>
+     <!-- ***** IMPORTANT : REPLACE THIS PLACEHOLDER *******-->
+       <resource-root path="https://github.com/MikeTB-Microsoft/App_Template_JBoss_EAP_on_AppService/blob/main/src/jbossappser-construction/db_config/postgresql-42.2.12.jar" />
+    </resources>
+    <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.transaction.api"/>
+    </dependencies>
+</module>

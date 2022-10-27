@@ -1,6 +1,6 @@
-# JBoss EAP Pet Store Microservices Application Deployed to Azure App Service (AAS)
+# JBoss EAP Pet Store Application Deployed to Azure App Service (AAS)
 ## Description 
-In this sample app template of the Pet Store Microservices application. Each of the Application Microservices are containerized and deployed to an Azure App Service (AAS) secured by Azure Firewall
+In this sample app template of the Pet Store Microservices application. The Application is built with Maven and deployed to an Azure App Service (AAS) secured by Azure Firewall
 
 ## Deploy JBoss EAP Applicaiton to Azure App Services:
 

@@ -248,7 +248,7 @@
           <schemaVersion>v2</schemaVersion>  
           <subscriptionId>21295f92-d09c-42d7-8653-b7a76e26a3c5</subscriptionId>  
           <resourceGroup>petstore-spoke-eastus</resourceGroup>  
-          <appName>jbeapcoolstorewebapp</appName>  
+          <appName>jbeappetstorewebapp</appName>  
           <pricingTier>P1v3</pricingTier>  
           <region>eastus</region>  
           <runtime> 

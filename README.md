@@ -78,7 +78,7 @@ This creates a local copy of the repository for you to work in.
 
 - Log into the Azure Portal
 - Nagivate the the "petstore_spoke_eastus" Resource Group
-- Locate the Wep App named: jbeapcoolstorewebapp (this is just a sample of what the Web App might be named)
+- Locate the Wep App named: jbeappetstorewebapp (this is just a sample of what the Web App might be named)
 - Click it...
 - On the upper Right Hand Side, you will see a URL:  https://xxxxxxxxxxxxxxxxxxx.azurewebsites.net (this is just a sample URL)
 - Click it...

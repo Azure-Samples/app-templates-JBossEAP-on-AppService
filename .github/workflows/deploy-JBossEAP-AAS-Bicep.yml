@@ -30,8 +30,6 @@ env:
   SPOKE_VNET: 'spoke-vnet'
   FW_PRIVATE_IP: '10.0.0.4'
   ROUTE_TABLE_NAME: 'aks-udr'
-  ACR_NAME: 'petstoreaasacraz'
-  CLUSTER_NAME: 'aasspoke'
   DB_SERVER_USER: 'petstoreadmin'
   DB_SERVER_ADMIN_PWD: 'petstore_admin123**'
 
@@ -218,7 +216,7 @@ jobs:
       with:
          inlineScript: | 
           az appservice plan create --name jbosseap-app-service-plan --resource-group ${{ env.SPOKE_RG }} --sku P1V3 --is-linux
-          az webapp create -g ${{ env.SPOKE_RG }} -p jbosseap-app-service-plan --n jbeapcoolstorewebapp --runtime "JBOSSEAP|7-java11" 
+          az webapp create -g ${{ env.SPOKE_RG }} -p jbosseap-app-service-plan --n jbeappetstorewebapp --runtime "JBOSSEAP|7-java11" 
          azPSVersion: "latest"
 
   build_deploy_jboss_eap_app:

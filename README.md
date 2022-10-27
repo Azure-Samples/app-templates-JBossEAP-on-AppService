@@ -48,7 +48,7 @@ This is a quickstart template. It deploys the following:
 - Local shell with Azure CLI installed or [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/)
 - Azure Subscription, on which you are able to create resources and assign permissions
   - View your subscription using ```az account show``` 
-  -  If you don't have an account, you can [create one for free](https://azure.microsoft.com/free).  
+  - If you don't have an account, you can [create one for free](https://azure.microsoft.com/free).  
 
 ## Getting Started
 ### Fork the repository

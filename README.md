@@ -2,7 +2,7 @@
 ## Description 
 In this sample app template of the Pet Store Microservices application. The Application is built with Maven and deployed to an Azure App Service (AAS) secured by Azure Firewall
 
-## Deploy JBoss EAP Applicaiton to Azure App Services:
+## Deploy JBoss EAP Application to Azure App Services:
 
 --
 Tech stack:

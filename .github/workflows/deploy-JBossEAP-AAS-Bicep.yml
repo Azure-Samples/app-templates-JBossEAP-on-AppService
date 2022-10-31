@@ -57,9 +57,9 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.HUB_RG }}
-        template: ./infra/aks-bicep/modules/hub_network.bicep
+        template: ./infra/jboss-eap-bicep/modules/hub_network.bicep
         parameters: >
-          ./infra/aks-bicep/action_params/hub_network.parameters.json
+          ./infra/jboss-eap-bicep/action_params/hub_network.parameters.json
           location="${{ env.LOCATION }}"
           hubVnetName="${{ env.HUB_VNET }}"
         deploymentName: hub-networking-github-actions
@@ -80,9 +80,9 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.HUB_RG }}
-        template: ./infra/aks-bicep/modules/firewall.bicep
+        template: ./infra/jboss-eap-bicep/modules/firewall.bicep
         parameters: >
-          ./infra/aks-bicep/action_params/firewall.parameters.json
+          ./infra/jboss-eap-bicep/action_params/firewall.parameters.json
           location="${{ env.LOCATION }}"
           hubVnetName="${{ env.HUB_VNET }}"
           fwPrivateIP="${{ env.FW_PRIVATE_IP }}"
@@ -104,9 +104,9 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.SPOKE_RG }}
-        template: ./infra/aks-bicep/modules/routing_table.bicep
+        template: ./infra/jboss-eap-bicep/modules/routing_table.bicep
         parameters: >
-          ./infra/aks-bicep/action_params/routing.parameters.json
+          ./infra/jboss-eap-bicep/action_params/routing.parameters.json
           location="${{ env.LOCATION }}"
           fwPrivateIP="${{ env.FW_PRIVATE_IP }}"
           routeTableName="${{ env.ROUTE_TABLE_NAME }}"
@@ -128,9 +128,9 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.SPOKE_RG }}
-        template: ./infra/aks-bicep/modules/spoke_network.bicep
+        template: ./infra/jboss-eap-bicep/modules/spoke_network.bicep
         parameters: >
-          ./infra/aks-bicep/action_params/spoke_networking.parameters.json
+          ./infra/jboss-eap-bicep/action_params/spoke_networking.parameters.json
           spoke_rg="${{ env.SPOKE_RG }}"
           location="${{ env.LOCATION }}"
           spokeVnetName="${{ env.SPOKE_VNET }}"
@@ -153,7 +153,7 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.HUB_RG }}
-        template: ./infra/aks-bicep/modules/peering.bicep
+        template: ./infra/jboss-eap-bicep/modules/peering.bicep
         parameters: >
           localVnetName="${{ env.HUB_VNET }}"
           remoteVnetName="${{ env.SPOKE_VNET }}"
@@ -165,7 +165,7 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.SPOKE_RG }}
-        template: ./infra/aks-bicep/modules/peering.bicep
+        template: ./infra/jboss-eap-bicep/modules/peering.bicep
         parameters: >
           localVnetName="${{ env.SPOKE_VNET }}" 
           remoteVnetName="${{ env.HUB_VNET }}" 
@@ -188,9 +188,9 @@ jobs:
         scope: resourcegroup
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ env.HUB_RG }}
-        template: ./infra/aks-bicep/modules/bastion.bicep
+        template: ./infra/jboss-eap-bicep/modules/bastion.bicep
         parameters: >
-          ./infra/aks-bicep/action_params/bastion.parameters.json
+          ./infra/jboss-eap-bicep/action_params/bastion.parameters.json
           location="${{ env.LOCATION }}"
           hubVnetName="${{ env.HUB_VNET }}"
         deploymentName: bastion-github-actions
